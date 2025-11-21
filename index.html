@@ -12,9 +12,9 @@
         
         /* Glassmorphism Utility Class */
         .glass {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 23, 42, 0.7); /* Darker glass for better readability */
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         /* Animations */
@@ -29,16 +29,30 @@
 </head>
 <body class="bg-slate-900 text-slate-50 selection:bg-blue-500 selection:text-white overflow-x-hidden">
 
-    <nav class="fixed w-full z-50 glass border-b border-slate-800">
+    <nav class="fixed w-full z-50 glass">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold tracking-tighter hover:text-blue-400 transition">MH.</a>
+            
             <div class="space-x-8 text-sm font-medium text-slate-400 hidden md:block">
                 <a href="#about" class="hover:text-blue-400 transition">About</a>
                 <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
                 <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
                 <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
             </div>
-            <div class="md:hidden text-slate-400"><i class="fas fa-bars"></i></div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 focus:outline-none p-2 rounded hover:bg-slate-800 transition">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-slate-900/95 backdrop-blur-xl absolute w-full left-0">
+            <div class="flex flex-col p-4 space-y-4 text-center text-slate-300 font-medium">
+                <a href="#about" class="block py-2 hover:text-blue-400 transition mobile-link">About</a>
+                <a href="#skills" class="block py-2 hover:text-blue-400 transition mobile-link">Skills</a>
+                <a href="#projects" class="block py-2 hover:text-blue-400 transition mobile-link">Projects</a>
+                <a href="#contact" class="block py-2 hover:text-blue-400 transition mobile-link">Contact</a>
+                <a href="https://github.com/Mohamedhassan268" class="block py-2 text-blue-400 border border-blue-500/30 rounded-lg mx-8">GitHub</a>
+            </div>
         </div>
     </nav>
 
@@ -234,5 +248,22 @@
         </div>
     </section>
 
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+
+        // Toggle Menu
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
