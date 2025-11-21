@@ -19,17 +19,17 @@ I am a final-year engineering student at **MUST University (Egypt)**, passionate
 
 ### 🚀 Featured Projects
 
-#### 1. [32-bit Single-Cycle RISC-V Processor](LINK_TO_YOUR_REPO)
+#### 1. [32-bit Single-Cycle RISC-V Processor](https://github.com/Mohamedhassan268/RISC-V-Processor-Design)
 *A complete 32-bit processor design based on Harvard Architecture.*
 * **Tech:** Verilog, ModelSim, Xilinx ISE.
 * **Key Feature:** Implemented full data path (ALU, Control Unit, Register File) and verified via simulation using a Fibonacci Series generator.
 
-#### 2. [AI-Driven Career Roadmap Platform](LINK_TO_YOUR_REPO)
+#### 2. [AI-Driven Career Roadmap Platform](https://github.com/aadhamashraf/CareerMatch-AI)
 *A gamified NLP platform to align student skills with job market needs.*
 * **Tech:** Python, FastAPI, Next.js, Docker, spaCy.
 * **Key Feature:** Uses **Cosine Similarity** on resume embeddings to score candidates and suggest micro-projects for upskilling.
 
-#### 3. [Li-Fi Optical Data Transmission](LINK_TO_YOUR_REPO)
+#### 3. [Li-Fi Optical Data Transmission](https://github.com/Mohamedhassan268/li-fi-arduino)
 *Wireless data transmission system using Visible Light Communication (VLC).*
 * **Tech:** Arduino, C++, Analog Circuit Design.
 * **Key Feature:** Implemented software hysteresis for noise filtering and designed custom LED driver circuits.
