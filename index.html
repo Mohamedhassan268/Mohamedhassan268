@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Hassan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        /* Glassmorphism Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-50 selection:bg-blue-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 glass border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter">MH.</h1>
+            <div class="space-x-6 text-sm font-medium text-slate-400 hidden md:block">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="pt-40 pb-20 px-4 max-w-6xl mx-auto text-center lg:text-left flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2">
+            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-400 uppercase bg-blue-500/10 rounded-full">
+                Electronics & Communication Engineer
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                Bridging <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Hardware</span> 
+                and <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300">Intelligence</span>.
+            </h1>
+            <p class="text-lg text-slate-400 mb-8 max-w-lg mx-auto lg:mx-0">
+                I design efficient silicon chips (RISC-V) and build intelligent software systems (AI). Final-year student at MUST University.
+            </p>
+            <div class="flex gap-4 justify-center lg:justify-start">
+                <a href="#projects" class="px-8 py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-semibold transition shadow-lg shadow-blue-500/25">
+                    View Projects
+                </a>
+                <a href="https://github.com/Mohamedhassan268" target="_blank" class="px-8 py-3 border border-slate-700 hover:bg-slate-800 rounded-lg font-semibold transition">
+                    <i class="fab fa-github mr-2"></i>GitHub
+                </a>
+            </div>
+        </div>
+        
+        <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
+            <div class="w-72 h-72 bg-blue-500 rounded-full blur-[100px] opacity-20 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+            <div id="skills" class="relative glass p-8 rounded-2xl max-w-md mx-auto rotate-3 hover:rotate-0 transition duration-500 border border-slate-700">
+                <code class="text-sm text-blue-300 block mb-4 border-b border-slate-700 pb-2">// Technical Arsenal</code>
+                <div class="grid grid-cols-2 gap-y-4 gap-x-2 text-slate-300 text-sm">
+                    <div class="flex items-center gap-2"><i class="fas fa-microchip text-blue-400"></i> Verilog / RISC-V</div>
+                    <div class="flex items-center gap-2"><i class="fab fa-python text-yellow-400"></i> Python & AI</div>
+                    <div class="flex items-center gap-2"><i class="fas fa-bolt text-yellow-200"></i> Analog IC Design</div>
+                    <div class="flex items-center gap-2"><i class="fas fa-server text-green-400"></i> FastAPI & Next.js</div>
+                    <div class="flex items-center gap-2"><i class="fas fa-memory text-red-400"></i> Embedded C</div>
+                    <div class="flex items-center gap-2"><i class="fab fa-docker text-blue-300"></i> Docker & Tools</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="py-20 bg-slate-800/30">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-blue-400">Featured</span> Projects</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <div class="glass rounded-xl overflow-hidden hover:border-blue-500/50 transition group">
+                    <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center group-hover:scale-105 transition duration-500">
+                        <i class="fas fa-microchip text-7xl text-slate-600 group-hover:text-blue-400 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-50">32-bit RISC-V Processor</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            A complete Single-Cycle Processor design based on Harvard Architecture. Implemented ALU, Control Unit, and Data Path in Verilog.
+                        </p>
+                        <div class="flex gap-2 mb-6 text-xs">
+                            <span class="bg-slate-700 px-2 py-1 rounded text-blue-200">Verilog</span>
+                            <span class="bg-slate-700 px-2 py-1 rounded text-blue-200">ModelSim</span>
+                            <span class="bg-slate-700 px-2 py-1 rounded text-blue-200">Xilinx ISE</span>
+                        </div>
+                        <a href="https://github.com/Mohamedhassan268/RISC-V-Processor-Design" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-semibold flex items-center gap-2">
+                            View Code <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass rounded-xl overflow-hidden hover:border-purple-500/50 transition group border border-purple-500/20">
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-purple-900/40 flex items-center justify-center group-hover:scale-105 transition duration-500 relative">
+                        <i class="fas fa-brain text-7xl text-slate-600 group-hover:text-purple-400 transition"></i>
+                    </div>
+                    <div class="p-6 relative">
+                        <span class="absolute top-4 right-4 bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-1 rounded border border-purple-500/30 uppercase tracking-wide">Capstone Project</span>
+                        
+                        <h3 class="text-xl font-bold mb-2 text-purple-50">AI Career Roadmap Platform</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Full-stack app using **NLP (Cosine Similarity)** to parse resumes and match them to job profiles. Features a gamified upskilling roadmap.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6 text-xs">
+                            <span class="bg-slate-700 px-2 py-1 rounded text-purple-200">FastAPI</span>
+                            <span class="bg-slate-700 px-2 py-1 rounded text-purple-200">Next.js</span>
+                            <span class="bg-slate-700 px-2 py-1 rounded text-purple-200">NLP</span>
+                        </div>
+                        <a href="https://github.com/aadhamashraf/CareerMatch-AI" target="_blank" class="text-purple-400 hover:text-purple-300 text-sm font-semibold flex items-center gap-2">
+                            View Code <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass rounded-xl overflow-hidden hover:border-green-500/50 transition group">
+                    <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center group-hover:scale-105 transition duration-500">
+                        <i class="fas fa-lightbulb text-7xl text-slate-600 group-hover:text-green-400 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-green-50">Li-Fi Optical Transmission</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Wireless data transmission system using Visible Light. Features custom analog driver circuits and software hysteresis for noise filtering.
+                        </p>
+                        <div class="flex gap-2 mb-6 text-xs">
+                            <span class="bg-slate-700 px-2 py-1 rounded text-green-200">Arduino</span>
+                            <span class="bg-slate-700 px-2 py-1 rounded text-green-200">C++</span>
+                            <span class="bg-slate-700 px-2 py-1 rounded text-green-200">Analog</span>
+                        </div>
+                        <a href="https://github.com/Mohamedhassan268/li-fi-arduino" target="_blank" class="text-green-400 hover:text-green-300 text-sm font-semibold flex items-center gap-2">
+                            View Code <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass rounded-xl overflow-hidden hover:border-pink-500/50 transition group">
+                    <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center group-hover:scale-105 transition duration-500">
+                        <i class="fas fa-network-wired text-7xl text-slate-600 group-hover:text-pink-400 transition"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-pink-50">Deep Learning Models</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Applied Neural Networks to real-world datasets. Built classification and regression models using PyTorch during DEPI training.
+                        </p>
+                        <div class="flex gap-2 mb-6 text-xs">
+                            <span class="bg-slate-700 px-2 py-1 rounded text-pink-200">Python</span>
+                            <span class="bg-slate-700 px-2 py-1 rounded text-pink-200">PyTorch</span>
+                            <span class="bg-slate-700 px-2 py-1 rounded text-pink-200">Pandas</span>
+                        </div>
+                        <a href="https://github.com/Mohamedhassan268" target="_blank" class="text-pink-400 hover:text-pink-300 text-sm font-semibold flex items-center gap-2">
+                            View Profile <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Let's Connect</h2>
+            <p class="text-slate-400 mb-12 max-w-xl mx-auto">
+                I am currently looking for full-time roles or internships in Digital IC Design, Embedded Systems, or AI Engineering.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:Mohamed.hassan505021@gmail.com" class="flex items-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 rounded-xl transition border border-slate-700 group">
+                    <div class="bg-slate-700 p-2 rounded-full group-hover:bg-blue-500/20 transition">
+                        <i class="fas fa-envelope text-blue-400"></i>
+                    </div>
+                    <span class="font-medium">Email Me</span>
+                </a>
+                <a href="tel:01110631460" class="flex items-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 rounded-xl transition border border-slate-700 group">
+                    <div class="bg-slate-700 p-2 rounded-full group-hover:bg-green-500/20 transition">
+                        <i class="fas fa-phone text-green-400"></i>
+                    </div>
+                    <span class="font-medium">01110631460</span>
+                </a>
+                <a href="https://github.com/Mohamedhassan268" target="_blank" class="flex items-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 rounded-xl transition border border-slate-700 group">
+                    <div class="bg-slate-700 p-2 rounded-full group-hover:bg-white/10 transition">
+                        <i class="fab fa-github text-white"></i>
+                    </div>
+                    <span class="font-medium">GitHub</span>
+                </a>
+            </div>
+            <footer class="mt-24 pt-8 border-t border-slate-800 text-slate-600 text-sm">
+                <p>&copy; 2025 Mohamed Hassan. Built with HTML & Tailwind CSS.</p>
+            </footer>
+        </div>
+    </section>
+
+</body>
+</html>
