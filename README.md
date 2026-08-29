@@ -1,49 +1,25 @@
-# Hi there, I'm Mohamed Hassan! 👋
+# Mohamed Hassan
 
-### 🎓 Electronics & Communication Engineer | Digital IC & AI Enthusiast
+Electronics & Communication Engineering, final year at MUST (Egypt). I work at the boundary of hardware and AI — digital IC design and RISC-V datapaths on one side, ML and full-stack systems on the other.
 
-I am a final-year engineering student at **MUST University (Egypt)**, passionate about the intersection of hardware architecture and artificial intelligence. My work bridges the gap between designing efficient silicon (Digital IC) and building intelligent software systems (AI/Full-Stack).
+## Recent work
 
----
+**[32-bit Single-Cycle RISC-V Processor](https://github.com/Mohamedhassan268/RISC-V-Processor-Design)**
+Harvard-architecture datapath — ALU, control unit, register file — in Verilog. Verified in ModelSim against a Fibonacci-sequence testbench, synthesized in Xilinx ISE.
 
-### 🛠️ Tech Stack
+**[CareerMatch AI](https://github.com/aadhamashraf/CareerMatch-AI)**
+FastAPI + Next.js platform that scores a resume against a job posting with cosine similarity over embeddings, then recommends micro-projects to close the gap. Dockerized.
 
-| **Domain** | **Technologies & Tools** |
-| :--- | :--- |
-| **Hardware & VLSI** | ![Verilog](https://img.shields.io/badge/-Verilog-black?style=flat&logo=verilog) ![RISC-V](https://img.shields.io/badge/-RISC--V-black?style=flat) ![Cadence](https://img.shields.io/badge/-Cadence-red?style=flat) ![Xilinx ISE](https://img.shields.io/badge/-Xilinx-blue?style=flat) |
-| **AI & Data Science** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white) ![NLP](https://img.shields.io/badge/-NLP-green?style=flat) ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white) |
-| **Full Stack & Web** | ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![React](https://img.shields.io/badge/-Next.js-000000?style=flat&logo=next.js&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white) |
-| **Embedded Systems** | ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat&logo=arduino&logoColor=white) ![PCB Design](https://img.shields.io/badge/-Altium-orange?style=flat) |
+**[Li-Fi Data Link over Visible Light](https://github.com/Mohamedhassan268/li-fi-arduino)**
+Arduino-based VLC transceiver. Wrote software hysteresis to filter ambient-light noise and designed the LED driver circuit from scratch.
 
----
+## Background
 
-### 🚀 Featured Projects
+- B.Sc. Electronics & Communication Engineering, Misr University for Science and Technology (expected 2026)
+- AI & ML trainee, Digital Egypt Pioneers Initiative
+- Semiconductor fabrication — Purdue University (online)
+- Analog IC design — Amit Learning
 
-#### 1. [32-bit Single-Cycle RISC-V Processor](https://github.com/Mohamedhassan268/RISC-V-Processor-Design)
-*A complete 32-bit processor design based on Harvard Architecture.*
-* **Tech:** Verilog, ModelSim, Xilinx ISE.
-* **Key Feature:** Implemented full data path (ALU, Control Unit, Register File) and verified via simulation using a Fibonacci Series generator.
+**Stack:** Verilog, RISC-V, Cadence, Xilinx ISE · Python, PyTorch, spaCy, pandas · FastAPI, Next.js, Docker, PostgreSQL · C++, Arduino, Altium
 
-#### 2. [AI-Driven Career Roadmap Platform](https://github.com/aadhamashraf/CareerMatch-AI)
-*A gamified NLP platform to align student skills with job market needs.*
-* **Tech:** Python, FastAPI, Next.js, Docker, spaCy.
-* **Key Feature:** Uses **Cosine Similarity** on resume embeddings to score candidates and suggest micro-projects for upskilling.
-
-#### 3. [Li-Fi Optical Data Transmission](https://github.com/Mohamedhassan268/li-fi-arduino)
-*Wireless data transmission system using Visible Light Communication (VLC).*
-* **Tech:** Arduino, C++, Analog Circuit Design.
-* **Key Feature:** Implemented software hysteresis for noise filtering and designed custom LED driver circuits.
-
----
-
-### 📚 Education & Certification
-* **B.Sc. Electronics & Communication Engineering** - Misr University for Science and Technology (Expected 2026)
-* **AI & Machine Learning Trainee** - Digital Egypt Pioneers Initiative (DEPI)
-* **Semiconductor Fabrication** - Purdue University (Online)
-* **Analog IC Design** - Amit Learning
-
----
-
-### 📫 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mohamed-hassan-2577861a7/)
-[![Email](https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=gmail)](mohamed,hassan505021@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/mohamed-hassan-2577861a7/) · [mohamed.hassan505021@gmail.com](mailto:mohamed.hassan505021@gmail.com)
