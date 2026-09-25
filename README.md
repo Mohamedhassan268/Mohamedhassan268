@@ -1,6 +1,6 @@
 # hey, i'm mohamed
 
-electronics & communication engineering student in egypt. i build chips and write code for fun — that's pretty much it.
+electronics & communication engineering student in egypt. i build chips and write code  — that's pretty much it.
 
 
 
